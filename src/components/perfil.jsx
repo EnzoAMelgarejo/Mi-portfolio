@@ -1,14 +1,17 @@
+import cvPDF from '/assets/cv.pdf'
 
 export const Perfil = ({nombre, edad, presentacion}) => {
   
-  const downloadFile = () => {
-    const link = document.createElement('a')
-    link.href = 'public/Programador .pdf'
-    link.download = 'Curriculum.pdf'
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-  }
+  const desacrgarCv=()=>{
+    console.log("funciona el btn descargar CV")
+    // Crear un enlace temporal
+    const link = document.createElement('a');
+    link.href = cvPDF;
+    // Especificar el nombre del archivo para descargar
+    link.download = 'cv.pdf';
+    // Simular el clic en el enlace para iniciar la descarga
+    link.click();
+   }
 
   const contactos = {
     mail: 'enzomelgarejo@gmail.com',
@@ -42,7 +45,7 @@ export const Perfil = ({nombre, edad, presentacion}) => {
           <a href={`mailto:${contactos.mail}`} rel="noopener noreferrer" target="_blank" className="contact-button">
           <i className="fa-solid fa-envelope"></i>
           </a>
-          <button onClick={downloadFile} className="contact-button">
+          <button className="contact-button" onClick={desacrgarCv}>
           <i className="fa-solid fa-file-pdf"></i>
           </button>
         </div>

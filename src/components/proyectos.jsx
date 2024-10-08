@@ -5,7 +5,7 @@ export const Proyectos = () => {
     {
       id: 1,
       name: 'Carrito de compras',
-      description: 'En esta aplicación de carrito de compras hecha con React...',
+      description: 'Esta aplicación de clima, construida con React, utiliza la API de OpenWeather para mostrar la temperatura en tiempo real y las condiciones meteorológicas. Los usuarios pueden buscar ciudades y ver la información actualizada con un diseño responsivo',
       technologies: 'React - Javascript - Node.js - Vite - Css - HTML - Git - Bootstrap - OpenWeather',
       link: 'https://github.com/EnzoAMelgarejo/Carrito-de-compras-React',
       image: '/Carrito.png',
@@ -13,10 +13,18 @@ export const Proyectos = () => {
     {
       id: 2,
       name: 'Aplicación de clima',
-      description: 'En esta aplicación de clima con React...',
+      description: 'Esta aplicación de carrito de compras utiliza React y Context para gestionar el estado de manera eficiente. Permite a los usuarios agregar y eliminar productos de forma sencilla, ofreciendo una experiencia responsiva en todos los dispositivos.',
       technologies: 'React - Javascript - Node.js - Vite - Css - HTML - Git - Bootstrap - OpenWeather',
       link: 'https://github.com/EnzoAMelgarejo/Aplicacion-de-clima',
       image: '/Clima.png',
+    },
+    {
+      id: 3,
+      name: 'Servidor de peliculas',
+      description: 'Esta base de datos de películas es una colección organizada que incluye títulos, géneros y fechas permitiendo a los usuarios buscar y explorar una variedad de películas',
+      technologies: 'NodeJs - MongoDBCompass - Docker - Express - Postman - Railway',
+      link: 'https://github.com/EnzoAMelgarejo/Node-API-Rest-Mongo',
+      image: '/servidormongo.png',
     }
   ];
 

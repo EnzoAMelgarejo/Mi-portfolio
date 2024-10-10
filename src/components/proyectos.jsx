@@ -25,6 +25,14 @@ export const Proyectos = () => {
       technologies: 'NodeJs - MongoDBCompass - Docker - Express - Postman - Railway',
       link: 'https://github.com/EnzoAMelgarejo/Node-API-Rest-Mongo',
       image: '/servidormongo.png',
+    },
+    {
+      id: 4,
+      name: 'Servidor con autenticacion de usuarios',
+      description: 'Este proyecto proporciona una solución segura para la autenticación de usuarios, permitiendo el registro, inicio de sesión y la actualizacion de datos. Con una interfaz amigable y prácticas de seguridad avanzadas, garantiza la protección de los datos del usuario mientras facilita una experiencia intuitiva y accesible.',
+      technologies: 'NodeJs - PostgreSQL - Docker - Prisma - Express - JWT - Postman - TypeScript',
+      link: 'https://github.com/EnzoAMelgarejo/node-jwt-api-rest-ts-PgreSQL',
+      image: '/autenticacion.png',
     }
   ];
 

@@ -1,3 +1,5 @@
+// Componente que muestra los detalles de un proyecto, como su nombre, descripción, tecnologías utilizadas y un enlace al proyecto en GitHub.
+// Recibe un objeto `project` como prop, que contiene toda la información del proyecto.
 
 export const ProjectDetails = ({ project }) => {
     return (

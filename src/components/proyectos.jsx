@@ -1,3 +1,7 @@
+// Componente que muestra una lista de proyectos en forma de tarjetas (cards).
+// Cada tarjeta contiene una imagen del proyecto y un detalle con más información sobre el mismo.
+// Los proyectos se almacenan en un arreglo y se renderizan dinámicamente utilizando el método `map`.
+
 import {ProjectDetails} from './projectdetails';
 
 export const Proyectos = () => {

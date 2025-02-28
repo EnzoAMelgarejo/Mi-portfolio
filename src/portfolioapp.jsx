@@ -1,3 +1,12 @@
+// Componente principal de la aplicación que estructura las secciones de mi portfolio.
+// Este componente importa y renderiza otros componentes como:
+// - NavBar: Barra de navegación para moverse entre las secciones.
+// - Perfil: Muestra información personal como el nombre, la edad y una presentación.
+// - Proyectos: Muestra los proyectos que he desarrollado.
+// - Habilidades: Presenta las habilidades técnicas que tengo como desarrollador.
+// - Footer: Pie de página con información adicional.
+// Además, maneja el estado para el nombre, edad y presentación usando useState, lo que permite actualizar estos valores de forma dinámica si fuera necesario.
+
 import { NavBar } from "./components/navbar"
 import { Perfil } from "./components/perfil"
 import { Proyectos } from "./components/Proyectos"

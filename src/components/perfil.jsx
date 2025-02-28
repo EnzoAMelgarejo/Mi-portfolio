@@ -1,3 +1,6 @@
+// El componente Perfil muestra información sobre un usuario, incluyendo su nombre, edad, presentación, enlaces de contacto (GitHub, LinkedIn, correo), y un botón para descargar su CV en formato PDF.
+// Al hacer clic en el botón de descarga, se descarga el archivo CV que se encuentra en la ruta '/assets/cv.pdf'.
+
 import cvPDF from '/assets/cv.pdf'
 
 export const Perfil = ({nombre, edad, presentacion}) => {

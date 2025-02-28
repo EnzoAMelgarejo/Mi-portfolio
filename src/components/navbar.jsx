@@ -1,3 +1,8 @@
+// Componente de la barra de navegación que permite al usuario desplazarse a diferentes secciones de la página.
+// Utiliza el componente `Link` de `react-router-dom` para la navegación, aunque el desplazamiento entre secciones se maneja con un evento `onClick`.
+// El comportamiento de desplazamiento es suave (smooth) gracias a la función `scrollToSection`.
+
+
 import { Link } from "react-router-dom"
 
 export const NavBar = () => {

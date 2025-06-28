@@ -9,7 +9,7 @@
 
 import { NavBar } from "./components/navbar"
 import { Perfil } from "./components/perfil"
-import { Proyectos } from "./components/Proyectos"
+import { Proyectos } from "./components/proyectos"
 import { Habilidades } from "./components/habilidades"
 import { Footer } from "./components/footer"
 import { useState } from "react"

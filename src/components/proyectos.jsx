@@ -11,7 +11,7 @@ export const Proyectos = () => {
       name: 'Carrito de compras',
       description: 'Esta aplicación de clima, construida con React, utiliza la API de OpenWeather para mostrar la temperatura en tiempo real y las condiciones meteorológicas. Los usuarios pueden buscar ciudades y ver la información actualizada con un diseño responsivo',
       technologies: 'React - Javascript - Node.js - Vite - Css - HTML - Git - Bootstrap - OpenWeather',
-      link: 'https://github.com/EnzoAMelgarejo/Carrito-de-compras-React',
+      link: 'https://proyecto-carrito-de-compras-react.netlify.app',
       image: '/Carrito.png',
     },
     {
@@ -19,7 +19,7 @@ export const Proyectos = () => {
       name: 'Aplicación de clima',
       description: 'Esta aplicación de carrito de compras utiliza React y Context para gestionar el estado de manera eficiente. Permite a los usuarios agregar y eliminar productos de forma sencilla, ofreciendo una experiencia responsiva en todos los dispositivos.',
       technologies: 'React - Javascript - Node.js - Vite - Css - HTML - Git - Bootstrap - OpenWeather',
-      link: 'https://github.com/EnzoAMelgarejo/Aplicacion-de-clima',
+      link: 'https://primer-proyecto-react-clima.netlify.app/',
       image: '/Clima.png',
     },
     {

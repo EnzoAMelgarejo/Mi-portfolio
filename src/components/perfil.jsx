@@ -2,11 +2,11 @@
 // Al hacer clic en el botón de descarga, se descarga el archivo CV que se encuentra en la ruta '/assets/cv.pdf'.
 
 import cvPDF from '/assets/cv.pdf'
+import styles from "../styles/profile.module.css"
 
 export const Perfil = ({nombre, edad, presentacion}) => {
   
   const desacrgarCv=()=>{
-    console.log("funciona el btn descargar CV")
     // Crear un enlace temporal
     const link = document.createElement('a');
     link.href = cvPDF;
@@ -25,30 +25,30 @@ export const Perfil = ({nombre, edad, presentacion}) => {
   return (
     <>
       <h1>PERFIL</h1>
-      <div className="perfil" id="Perfil">
-       <div className="perfil-card">
-         <img src="/FotoCv.jpg" alt="Perfil" className="foto"></img>
-          <div className="perfil-card-content" data-text={nombre}>
+      <div className={styles.profile} id="Perfil">
+       <div className={styles["profile-card"]}>
+         <img src="/fotoCV.jpg" alt="Perfil" className={styles.pic}></img>
+          <div className={styles["profile-card-content"]} data-text={nombre}>
             <h1>FullStackDeveloper</h1>
             <h1>{nombre}</h1>
             <h1>{edad}AÑOS</h1>
           </div>
        </div>
-       <div className="presentacion">
+       <div className={styles.bio}>
         <h5>Quien soy?</h5>
         <h5>{presentacion}</h5>
         </div>
-        <div className="contacts">
-          <a href={contactos.github} rel="noopener noreferrer" target="_blank" className="contact-button">
+        <div className={styles.contacts}>
+          <a href={contactos.github} rel="noopener noreferrer" target="_blank" className={styles["contact-btn"]}>
           <i className="fa-brands fa-github"></i>
           </a>
-          <a href={contactos.linkedin} rel="noopener noreferrer" target="_blank" className="contact-button">
+          <a href={contactos.linkedin} rel="noopener noreferrer" target="_blank" className={styles["contact-btn"]}>
           <i className="fa-brands fa-linkedin"></i>
           </a>
-          <a href={`mailto:${contactos.mail}`} rel="noopener noreferrer" target="_blank" className="contact-button">
+          <a href={`mailto:${contactos.mail}`} rel="noopener noreferrer" target="_blank" className={styles["contact-btn"]}>
           <i className="fa-solid fa-envelope"></i>
           </a>
-          <button className="contact-button" onClick={desacrgarCv}>
+          <button className={styles["contact-btn"]} onClick={desacrgarCv}>
           <i className="fa-solid fa-file-pdf"></i>
           </button>
         </div>

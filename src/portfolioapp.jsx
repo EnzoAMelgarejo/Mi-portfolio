@@ -16,7 +16,7 @@ import { useState } from "react"
 
 export const PortfolioApp = () => {
   const nombreBase ='Enzo'
-  const edadBase = '21'
+  const edadBase = '22 '
   const presentacionBase = `¡Hola! Soy Enzo, Fullstack Developer Junior
  Soy un apasionado de la tecnología con experiencia en el desarrollo de aplicaciones web utilizando tecnologías como JavaScript, React, Node.js, y bases de datos. Mi enfoque es crear soluciones dinámicas y eficientes tanto en el frontend como en el backend.
 
@@ -28,7 +28,7 @@ export const PortfolioApp = () => {
 
   return (
     <>
-    <div className="app">
+    <div className="app fadeIn">
       <NavBar />
       <div className="main-content">
         <Perfil nombre={nombre} edad={edad} presentacion={presentacion}/>

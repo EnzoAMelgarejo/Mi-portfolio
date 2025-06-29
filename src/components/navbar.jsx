@@ -17,7 +17,7 @@ export const NavBar = () => {
 
   return (
     <>
-        <nav className={`navbar navbar-expand-lg bg-dark border-bottom border-body ${styles.stickyNav}`} data-bs-theme="dark">
+        <nav className={`navbar navbar-expand-lg bg-dark shadow-lg ${styles.stickyNav}`} data-bs-theme="dark">
   <div className="container-fluid">
     <Link
       className={`navbar-brand ${styles.brand}`}

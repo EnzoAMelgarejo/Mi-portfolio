@@ -10,7 +10,9 @@
 
 .profile-card {
     display: flex;
+    flex-direction: row;
     padding: 20px;
+    min-width: 300px;
 }
 
 
@@ -44,6 +46,7 @@
 .pic { 
     width: 300px !important;
     height: 300px !important;
+    flex-shrink: 0;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
@@ -67,29 +70,78 @@
 }
 
 .contact-btn {
-  background-color: #2e2e2e; /* Fondo oscuro */
-  border: 2px solid #4d4d4d; /* Borde gris oscuro */
-  border-radius: 50%; /* Forma circular */
-  padding: 10px;
-  color: #ffffff; /* Ícono blanco */
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    background-color: #2e2e2e; /* Fondo oscuro */
+    border: 2px solid #4d4d4d; /* Borde gris oscuro */
+    border-radius: 50%; /* Forma circular */
+    padding: 10px;
+    color: #ffffff; /* Ícono blanco */
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
 }
 
 .contact-btn:hover {
-  background-color: #3d3d3d; /* Fondo más claro al hacer hover */
-  border-color: #ff6600; /* Borde naranja en hover */
-  color: #ff6600; /* Ícono naranja en hover */
+    background-color: #3d3d3d; /* Fondo más claro al hacer hover */
+    border-color: #ff6600; /* Borde naranja en hover */
+    color: #ff6600; /* Ícono naranja en hover */
+    text-decoration: none;
 }
 
 .contact-btn i {
-  font-size: 40px; /* Tamaño del ícono */
+    font-size: 40px; /* Tamaño del ícono */
+    text-decoration: none;
 }
 
 .contact-btn img {
-  width: 24px; /* Tamaño del ícono SVG */
-  height: 24px;
+    width: 24px; /* Tamaño del ícono SVG */
+    height: 24px;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .profile {
+    gap: 30px;
+    padding: 10px;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    min-width: unset;
+  }
+
+  .profile-card-content {
+    margin-left: 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .profile-card-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .pic {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .bio {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .contacts {
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .contact-btn i {
+    font-size: 32px;
+  }
 }

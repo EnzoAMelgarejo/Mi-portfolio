@@ -29,7 +29,7 @@ export const Perfil = ({nombre, edad, presentacion}) => {
        <div className={styles["profile-card"]}>
          <img src="/fotoCV.jpg" alt="Perfil" className={styles.pic}></img>
           <div className={styles["profile-card-content"]} data-text={nombre}>
-            <h1>FullStackDeveloper</h1>
+            <h1>Full Stack Developer</h1>
             <h1>{nombre}</h1>
             <h1>{edad}AÑOS</h1>
           </div>

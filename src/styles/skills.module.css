@@ -50,3 +50,29 @@
 .btn-icon:hover::before {
     left: 0; /* Desliza el color desde la izquierda */
 }
+
+@media (max-width: 767px) {
+  .skills {
+    padding: 20px;
+  }
+
+  .btns {
+    display: flex;
+    flex-wrap: wrap; /* Permite que pasen a otra línea */
+    justify-content: center;
+    gap: 10px; /* Espacio entre botones */
+  }
+
+  .btn-icon {
+    flex: 1 0 40%; /* Cada botón ocupa hasta 40% del ancho antes de hacer wrap */
+    min-width: 120px; /* Tamaño mínimo para evitar que se achiquen demasiado */
+    justify-content: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .btn-icon i {
+    font-size: 36px;
+    margin-right: 6px;
+  }
+}

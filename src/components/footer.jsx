@@ -2,7 +2,7 @@
 export const Footer = () => {
   return (
     <>
-      <footer className="footer">@EnzoMelgarejo2024</footer>
+      <footer className="footer">@EnzoMelgarejo2025</footer>
     </>
   )
 }

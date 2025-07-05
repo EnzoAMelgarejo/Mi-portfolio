@@ -5,14 +5,16 @@
 
 import styles from "../styles/skills.module.css"
 import { habilidades } from "../data/skillsData";
+import { useTranslation } from "react-i18next";
 
 export const Habilidades = () => {
 
+  const {t} = useTranslation();
 
   return (
     <>
       <div id="Habilidades">
-          <h1>Mis Habilidades</h1>
+          <h1 style={{textTransform: 'uppercase'}}>{t('sections.habilidades')}</h1>
           <div className={styles.skills}>
               <div className={styles.btns}>
                   {habilidades.map((habilidad) => (

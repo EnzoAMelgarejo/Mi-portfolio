@@ -1,0 +1,45 @@
+{
+  "perfil": {
+    "presentacion": "¡Hola! Soy Enzo, Fullstack Developer Junior.\nSoy un apasionado de la tecnología con experiencia en el desarrollo de aplicaciones web utilizando tecnologías como JavaScript, React, Node.js y bases de datos.\n\nMi objetivo es continuar creciendo como desarrollador y contribuir en proyectos que hagan la diferencia. Siempre estoy en busca de nuevos desafíos que me permitan mejorar mis habilidades y aportar con creatividad y soluciones sólidas."
+  },
+
+  "sections": {
+    "perfil": "Perfil",
+    "proyectos": "Proyectos",
+    "habilidades": "Mis Habilidades"
+  },
+
+  "projects": {
+
+    "project1": {
+      "name": "Carrito de compras",
+      "description": "Esta aplicación de carrito de compras utiliza React y Context para gestionar el estado de manera eficiente. Permite a los usuarios agregar y eliminar productos de forma sencilla, ofreciendo una experiencia responsiva en todos los dispositivos." 
+    },
+
+    "project2": {
+      "name": "Aplicación de clima",
+      "description": "Esta aplicación de clima, construida con React, utiliza la API de OpenWeather para mostrar la temperatura en tiempo real y las condiciones meteorológicas. Los usuarios pueden buscar ciudades y ver la información actualizada con un diseño responsivo"
+    },
+
+    "project3": {
+      "name": "Servidor de peliculas",
+      "description": "Esta base de datos de películas es una colección organizada que incluye títulos, géneros y fechas permitiendo a los usuarios buscar y explorar una variedad de películas"
+    },
+
+    "project4": {
+      "name": "Servidor con autenticacion de usuarios",
+      "description": "Este proyecto proporciona una solución segura para la autenticación de usuarios, permitiendo el registro, inicio de sesión y la actualizacion de datos. Con una interfaz amigable y prácticas de seguridad avanzadas, garantiza la protección de los datos del usuario mientras facilita una experiencia intuitiva y accesible."
+    },
+
+    "project5": {
+      "name": "Mostrador de Peliculas",
+      "description": "Este proyecto ofrece una plataforma interactiva para explorar y gestionar películas, desarrollada con el stack MERN e implementando autenticación segura mediante JWT. Los usuarios pueden registrarse, iniciar sesión, cerrar sesión, crear listas personalizadas y añadir películas a sus colecciones. Con una interfaz intuitiva y un flujo de navegación fluido, garantiza una experiencia dinámica y segura para el usuario."
+    }
+  },
+  
+  "projectCard": {
+    "name": "Nombre",
+    "description": "Descripción",
+    "technologies": "Tecnologías"
+  }
+}

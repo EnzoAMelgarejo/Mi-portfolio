@@ -1,12 +1,14 @@
 // El componente Perfil muestra información sobre un usuario, incluyendo su nombre, edad, presentación, enlaces de contacto (GitHub, LinkedIn, correo), y un botón para descargar su CV en formato PDF.
 // Al hacer clic en el botón de descarga, se descarga el archivo CV que se encuentra en la ruta '/assets/cv.pdf'.
 
+import { useTranslation } from 'react-i18next'
 import cvPDF from '/assets/cv.pdf'
 import styles from "../styles/profile.module.css"
 
 export const Perfil = ({nombre, edad, presentacion}) => {
-  
-  const desacrgarCv=()=>{
+  const {t} = useTranslation()
+
+  const downloadCv=()=>{
     // Crear un enlace temporal
     const link = document.createElement('a');
     link.href = cvPDF;
@@ -24,19 +26,19 @@ export const Perfil = ({nombre, edad, presentacion}) => {
 
   return (
     <>
-      <h1>PERFIL</h1>
+      <h1 style={{textTransform: 'uppercase'}}>{t('sections.perfil')}</h1>
       <div className={styles.profile} id="Perfil">
        <div className={styles["profile-card"]}>
          <img src="/fotoCV.jpg" alt="Perfil" className={styles.pic}></img>
           <div className={styles["profile-card-content"]} data-text={nombre}>
             <h1>Full Stack Developer</h1>
             <h1>{nombre}</h1>
-            <h1>{edad}AÑOS</h1>
+            <h1>{edad}{t('AÑOS')}</h1>
           </div>
        </div>
        <div className={styles.bio}>
-        <h5>Quien soy?</h5>
-        <h5>{presentacion}</h5>
+        <h5>{t('Quien soy?')}</h5>
+        <h5 style={{whiteSpace: "pre-line"}}>{presentacion}</h5>
         </div>
         <div className={styles.contacts}>
           <a href={contactos.github} rel="noopener noreferrer" target="_blank" className={styles["contact-btn"]}>
@@ -48,7 +50,7 @@ export const Perfil = ({nombre, edad, presentacion}) => {
           <a href={`mailto:${contactos.mail}`} rel="noopener noreferrer" target="_blank" className={styles["contact-btn"]}>
           <i className="fa-solid fa-envelope"></i>
           </a>
-          <button className={styles["contact-btn"]} onClick={desacrgarCv}>
+          <button className={styles["contact-btn"]} onClick={downloadCv}>
           <i className="fa-solid fa-file-pdf"></i>
           </button>
         </div>

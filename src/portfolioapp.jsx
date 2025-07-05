@@ -12,19 +12,21 @@ import { Perfil } from "./components/perfil"
 import { Proyectos } from "./components/proyectos"
 import { Habilidades } from "./components/habilidades"
 import { Footer } from "./components/footer"
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { useTranslation } from "react-i18next"
 
 export const PortfolioApp = () => {
   const nombreBase ='Enzo'
   const edadBase = '22 '
-  const presentacionBase = `¡Hola! Soy Enzo, Fullstack Developer Junior
- Soy un apasionado de la tecnología con experiencia en el desarrollo de aplicaciones web utilizando tecnologías como JavaScript, React, Node.js, y bases de datos. Mi enfoque es crear soluciones dinámicas y eficientes tanto en el frontend como en el backend.
+  const {t, i18n} = useTranslation()
 
- Mi objetivo es continuar creciendo como desarrollador y contribuir en proyectos que hagan la diferencia. Siempre estoy en busca de nuevos desafíos que me permitan mejorar mis habilidades y aportar con creatividad y soluciones sólidas.`
-  
   const [nombre, setNombre] = useState(nombreBase)
   const [edad, setEdad] = useState(edadBase)
-  const [presentacion, setPresentacion] = useState(presentacionBase)
+  const [presentacion, setPresentacion] = useState('')
+
+  useEffect(() =>{
+    setPresentacion(t('perfil.presentacion'))
+  }, [i18n.language, t])
 
   return (
     <>

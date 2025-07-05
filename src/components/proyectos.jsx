@@ -5,12 +5,15 @@
 import {ProjectDetails} from './projectdetails';
 import styles from "../styles/projects.module.css"
 import { projects } from '../data/projectsData';
+import { useTranslation } from 'react-i18next';
 
 export const Proyectos = () => {
 
+  const {t} = useTranslation();
+
   return (
     <>
-      <h1>PROYECTOS</h1>
+      <h1 style={{textTransform: 'uppercase'}}>{t('sections.proyectos')}</h1>
       <div className={styles.projects} id="Proyectos">
         <div className={styles["project-container"]}>
           {projects.map((project) => (
@@ -19,7 +22,12 @@ export const Proyectos = () => {
                 <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.image}>
                   <img src={project.image} alt={`Proyecto ${project.name}`} className={styles["image-project"]} />
                 </a>
-                <ProjectDetails project={project} />
+                <ProjectDetails project={{
+                    ...project,
+                    name: t(project.nameKey),
+                    description: t(project.descriptionKey)
+                  }}
+                />
               </div>
             </div>
           ))}

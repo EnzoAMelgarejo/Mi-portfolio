@@ -1,0 +1,44 @@
+{
+  "perfil": {
+    "presentacion": "Hi! I'm Enzo, a Junior Fullstack Developer.\nI'm passionate about technology with experience in building web applications using technologies like JavaScript, React, Node.js, and databases.\n\nMy goal is to keep growing as a developer and contribute to projects that make a difference. I'm always looking for new challenges that allow me to improve my skills and provide creative, solid solutions."
+  },
+
+  "sections": {
+    "perfil": "Profile",
+    "proyectos": "Projects",
+    "habilidades": "My Skills"
+  },
+
+  "projects": {
+    "project1": {
+      "name": "Shopping Cart",
+      "description": "This shopping cart app uses React and Context to efficiently manage state. It allows users to add and remove products easily, offering a responsive experience across all devices."
+    },
+
+    "project2": {
+      "name": "Weather App",
+      "description": "This weather application, built with React, uses the OpenWeather API to display real-time temperature and weather conditions. Users can search for cities and view up-to-date information with a responsive design."
+    },
+
+    "project3": {
+      "name": "Movie Server",
+      "description": "This movie database is an organized collection that includes titles, genres, and release dates, allowing users to search and explore a wide range of films."
+    },
+
+    "project4": {
+      "name": "User Authentication Server",
+      "description": "This project provides a secure solution for user authentication, enabling registration, login, and data updates. With a friendly interface and advanced security practices, it ensures user data protection while offering an intuitive and accessible experience."
+    },
+
+    "project5": {
+      "name": "Movie Dashboard",
+      "description": "This project offers an interactive platform to explore and manage movies, developed with the MERN stack and secure JWT authentication. Users can register, log in, log out, create custom lists, and add movies to their collections. With an intuitive interface and smooth navigation flow, it guarantees a dynamic and secure user experience."
+    }
+  },
+
+  "projectCard": {
+    "name": "Name",
+    "description": "Description",
+    "technologies": "Technologies"
+  }
+}
